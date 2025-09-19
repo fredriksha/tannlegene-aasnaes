@@ -1,29 +1,222 @@
 <!doctype html>
-<html lang="en">
+<html lang="nb">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tannlegene Aasnaes</title>
-  <meta name="description" content="Welcome to Tannlegene Aasnaes">
+  <title>Tannlegene Aasnæs AS</title>
+  <meta name="description" content="Moderne tannklinikk i Sande sentrum. Bred kompetanse, direkteoppgjør med HELFO.">
   <link rel="icon" href="favicon.ico">
   <style>
-    :root { color-scheme: light dark; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      display: grid;
-      place-items: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.5;
+    :root {
+      --bg: #0b0c10;
+      --card: #121318;
+      --text: #e9eef5;
+      --muted: #b9c2cf;
+      --brand: #2bb673;
+      --brand-2: #1e90ff;
+      --border: #1f2330;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      color-scheme: dark light;
     }
-    main { text-align: center; padding: 2rem; }
-    h1 { margin: 0 0 0.5rem; font-size: 2rem; }
-    p { margin: 0; opacity: 0.8; }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f7f9fc; --card: #ffffff; --text: #0f1623; --muted: #516074; --border: #e6eaf0; --shadow: 0 12px 30px rgba(16,24,40,.06); }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+    /* Layout */
+    .container { width: min(1120px, 92%); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(140%) blur(8px); background: color-mix(in oklab, var(--bg) 82%, transparent); border-bottom: 1px solid var(--border); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; }
+    .brand .logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: var(--shadow); }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-weight: 600; font-size: 14px; }
+    nav a:hover { color: var(--text); }
+    .cta { display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: white; border-radius: 10px; text-decoration: none; font-weight: 700; box-shadow: var(--shadow); }
+
+    /* Hero */
+    .hero { padding: 64px 0 24px; background: radial-gradient(1200px 400px at 50% -10%, color-mix(in oklab, var(--brand) 18%, transparent), transparent), radial-gradient(800px 300px at 10% -10%, color-mix(in oklab, var(--brand-2) 14%, transparent), transparent); }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; }
+    .hero h1 { font-size: clamp(28px, 4.5vw, 48px); line-height: 1.1; margin: 0 0 14px; }
+    .hero p { margin: 0 0 22px; color: var(--muted); font-size: 16px; }
+    .hero-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+    .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .badge { border: 1px solid var(--border); padding: 6px 10px; border-radius: 999px; color: var(--muted); font-size: 12px; background: color-mix(in oklab, var(--card) 80%, transparent); }
+
+    /* Sections */
+    section { padding: 56px 0; }
+    .section-title { font-size: 24px; margin: 0 0 20px; }
+    .muted { color: var(--muted); }
+
+    /* Cards grid */
+    .grid { display: grid; gap: 16px; }
+    .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .grid.cols-3 { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    /* Team */
+    .team { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); }
+    .member { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; box-shadow: var(--shadow); display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: center; }
+    .avatar { width: 64px; height: 64px; border-radius: 12px; background: linear-gradient(135deg, #56ccf2, #2f80ed); }
+    .member h4 { margin: 0; font-size: 16px; }
+    .member span { color: var(--muted); font-size: 13px; }
+
+    /* Contact */
+    .contact { display: grid; gap: 16px; grid-template-columns: 1.2fr 0.8fr; }
+    .list { display: grid; gap: 10px; }
+    .item { display: flex; gap: 12px; align-items: flex-start; padding: 12px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+    .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--brand); margin-top: 6px; }
+    .hours { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+    .hours table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .hours td { padding: 8px 0; border-bottom: 1px dashed var(--border); color: var(--muted); }
+
+    footer { padding: 36px 0; border-top: 1px solid var(--border); color: var(--muted); }
   </style>
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Tannlegene Aasnæs AS</div>
+      </div>
+      <nav>
+        <a href="#tjenester">Våre tjenester</a>
+        <a href="#team">Om oss</a>
+        <a href="#kontakt">Kontakt oss</a>
+        <a class="cta" href="tel:+47XXXXXXXX">Ring oss</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Tannlegene Aasnaes</h1>
-    <p>Site is up. Replace this content with your app.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Moderne tannklinikk i Sande sentrum</h1>
+          <p>Erfarne tannleger, moderne utstyr og direkteoppgjør med HELFO for en enkel og trygg opplevelse.</p>
+          <div class="badges">
+            <span class="badge">Direkteoppgjør med HELFO</span>
+            <span class="badge">Kundeparkering</span>
+            <span class="badge">Kort vei til buss og tog</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Bestill time</h3>
+          <p class="muted">Ring oss for å avtale time eller få veiledning.</p>
+          <p><a class="cta" href="tel:+47XXXXXXXX">Ring klinikken</a></p>
+          <p class="muted" style="font-size:12px; margin-top:8px;">Åpent man–fre 08:00–16:00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tjenester">
+      <div class="container">
+        <h2 class="section-title">Våre tjenester</h2>
+        <div class="grid cols-3">
+          <div class="card"><h3>Undersøkelse & rens</h3><p>Forebyggende tannhelse, røntgen ved behov og grundig rens.</p></div>
+          <div class="card"><h3>Fyllinger & krone</h3><p>Skånsom restaurering med moderne materialer.</p></div>
+          <div class="card"><h3>Rotfylling</h3><p>Effektiv behandling ved tannverk og infeksjon.</p></div>
+          <div class="card"><h3>Tanntrekking</h3><p>Skånsom ekstraksjon og oppfølging.</p></div>
+          <div class="card"><h3>Protetikk & implantat</h3><p>Bro, protese og implantatløsninger i samarbeid med spesialist.</p></div>
+          <div class="card"><h3>Akutt hjelp</h3><p>Rask time ved akutte smerter og skader.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2 class="section-title">Hvem er vi</h2>
+        <div class="team">
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h4>Elin Tandberg Aasnæs</h4>
+              <span>Allmennpraktiserende tannlege</span>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h4>Lars Resen‑Fellie</h4>
+              <span>Allmennpraktiserende tannlege</span>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h4>Reidulf Aasnæs</h4>
+              <span>Allmennpraktiserende tannlege</span>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h4>Johanna Rykke Berstad</h4>
+              <span>Oral kirurgi og oral medisin</span>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h4>Wiktoria Ilzcuk</h4>
+              <span>Allmennpraktiserende tannlege</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container contact">
+        <div>
+          <h2 class="section-title">Kontakt oss</h2>
+          <div class="list">
+            <div class="item"><div class="dot"></div><div>
+              <strong>Adresse</strong>
+              <div class="muted">Sande sentrum, 3070 Sande i Vestfold</div>
+            </div></div>
+            <div class="item"><div class="dot"></div><div>
+              <strong>Telefon</strong>
+              <div><a class="cta" href="tel:+47XXXXXXXX">Ring +47 XX XX XX XX</a></div>
+            </div></div>
+            <div class="item"><div class="dot"></div><div>
+              <strong>E‑post</strong>
+              <div class="muted"><a href="mailto:post@tannlegeneaasnaes.no">post@tannlegeneaasnaes.no</a></div>
+            </div></div>
+          </div>
+        </div>
+        <div>
+          <div class="hours">
+            <h3 style="margin:0 0 8px;">Åpningstider</h3>
+            <table>
+              <tr><td>Mandag – Fredag</td><td style="text-align:right;">08:00 – 16:00</td></tr>
+              <tr><td>Lørdag – Søndag</td><td style="text-align:right;">Stengt</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>© <span id="year"></span> Tannlegene Aasnæs AS</div>
+      <div style="display:flex; gap:16px;">
+        <a href="#tjenester" style="color:inherit; text-decoration:none;">Tjenester</a>
+        <a href="#team" style="color:inherit; text-decoration:none;">Om oss</a>
+        <a href="#kontakt" style="color:inherit; text-decoration:none;">Kontakt</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
