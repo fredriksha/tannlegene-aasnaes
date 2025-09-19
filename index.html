@@ -38,8 +38,7 @@
     .hero h1 { font-size: clamp(32px, 4.8vw, 56px); line-height: 1.08; margin: 0 0 18px; }
     .hero p { margin: 0 0 26px; color: var(--muted); font-size: 18px; }
     .hero-card { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; box-shadow: var(--shadow); }
-    .badges { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
-    .badge { border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: var(--muted); font-size: 13px; background: #fff; }
+    .hero-ph { width: 100%; height: 260px; border-radius: 16px; border: 1px dashed var(--border); display: grid; place-items: center; color: var(--muted); }
 
     /* Sections */
     section { padding: 80px 0; }
@@ -55,12 +54,13 @@
 
     .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); }
     .card h3 { margin: 0 0 10px; font-size: 20px; }
-    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .card p { margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+    .card .more { display:inline-block; padding:10px 14px; border-radius:10px; background: var(--blue); color:#fff; text-decoration:none; font-weight:700; }
 
-    /* Team */
+    /* Team teaser */
     .team { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
     .member { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 22px; box-shadow: var(--shadow); display: grid; grid-template-columns: 64px 1fr; gap: 16px; align-items: center; }
-    .avatar { width: 64px; height: 64px; border-radius: 12px; background: linear-gradient(135deg, #7cc0ff, var(--blue)); }
+    .avatar { width: 64px; height: 64px; border-radius: 12px; background: linear-gradient(135deg, #7cc0ff, var(--blue)); opacity:.25 }
     .member h4 { margin: 0; font-size: 17px; }
     .member span { color: var(--muted); font-size: 14px; }
 
@@ -84,10 +84,10 @@
         <div>Tannlegene Aasnæs AS</div>
       </div>
       <nav>
-        <a href="#hjem">Hjem</a>
-        <a href="#tjenester">Våre tjenester</a>
-        <a href="#team">Om oss</a>
-        <a href="#kontakt">Kontakt oss</a>
+        <a href="./index.html">Hjem</a>
+        <a href="./tjenester.html">Våre tjenester</a>
+        <a href="./om-oss.html">Om oss</a>
+        <a href="./kontakt.html">Kontakt oss</a>
         <a class="cta" href="tel:+47XXXXXXXX">Ring oss</a>
       </nav>
     </div>
@@ -106,6 +106,7 @@
           </div>
         </div>
         <div class="hero-card">
+          <div class="hero-ph">Bilde – hero plassholder</div>
           <h3>Bestill time</h3>
           <p class="muted">Ring oss for å avtale time eller få veiledning.</p>
           <p><a class="cta" href="tel:+47XXXXXXXX">Ring klinikken</a></p>
@@ -114,64 +115,30 @@
       </div>
     </section>
 
-    <section id="tjenester">
+    <section>
       <div class="container">
         <h2 class="section-title">Våre tjenester</h2>
         <div class="grid cols-3">
-          <div class="card"><h3>Undersøkelse & rens</h3><p>Forebyggende tannhelse, røntgen ved behov og grundig rens.</p></div>
-          <div class="card"><h3>Fyllinger & krone</h3><p>Skånsom restaurering med moderne materialer.</p></div>
-          <div class="card"><h3>Rotfylling</h3><p>Effektiv behandling ved tannverk og infeksjon.</p></div>
-          <div class="card"><h3>Tanntrekking</h3><p>Skånsom ekstraksjon og oppfølging.</p></div>
-          <div class="card"><h3>Protetikk & implantat</h3><p>Bro, protese og implantatløsninger i samarbeid med spesialist.</p></div>
-          <div class="card"><h3>Akutt hjelp</h3><p>Rask time ved akutte smerter og skader.</p></div>
+          <div class="card"><h3>Undersøkelse & rens</h3><p>Forebyggende tannhelse, røntgen ved behov og grundig rens.</p><a class="more" href="./tjenester.html">Les mer</a></div>
+          <div class="card"><h3>Fyllinger & krone</h3><p>Skånsom restaurering med moderne materialer.</p><a class="more" href="./tjenester.html">Les mer</a></div>
+          <div class="card"><h3>Akutt hjelp</h3><p>Rask time ved akutte smerter og skader.</p><a class="more" href="./tjenester.html">Les mer</a></div>
         </div>
       </div>
     </section>
 
-    <section id="team">
+    <section>
       <div class="container">
         <h2 class="section-title">Om oss</h2>
         <div class="team">
-          <div class="member">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h4>Elin Tandberg Aasnæs</h4>
-              <span>Allmennpraktiserende tannlege</span>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h4>Lars Resen‑Fellie</h4>
-              <span>Allmennpraktiserende tannlege</span>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h4>Reidulf Aasnæs</h4>
-              <span>Allmennpraktiserende tannlege</span>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h4>Johanna Rykke Berstad</h4>
-              <span>Oral kirurgi og oral medisin</span>
-            </div>
-          </div>
-          <div class="member">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h4>Wiktoria Ilzcuk</h4>
-              <span>Allmennpraktiserende tannlege</span>
-            </div>
-          </div>
+          <div class="member"><div class="avatar"></div><div><h4>Elin Tandberg Aasnæs</h4><span>Allmennpraktiserende tannlege</span></div></div>
+          <div class="member"><div class="avatar"></div><div><h4>Lars Resen‑Fellie</h4><span>Allmennpraktiserende tannlege</span></div></div>
+          <div class="member"><div class="avatar"></div><div><h4>Reidulf Aasnæs</h4><span>Allmennpraktiserende tannlege</span></div></div>
         </div>
+        <p style="margin-top:18px"><a class="more" href="./om-oss.html">Les mer</a></p>
       </div>
     </section>
 
-    <section id="kontakt">
+    <section>
       <div class="container contact">
         <div>
           <h2 class="section-title">Kontakt oss</h2>
@@ -189,6 +156,7 @@
               <div class="muted"><a href="mailto:post@tannlegeneaasnaes.no">post@tannlegeneaasnaes.no</a></div>
             </div></div>
           </div>
+          <p style="margin-top:18px"><a class="more" href="./kontakt.html">Les mer</a></p>
         </div>
         <div>
           <div class="hours">
@@ -207,9 +175,9 @@
     <div class="container" style="display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap;">
       <div>© <span id="year"></span> Tannlegene Aasnæs AS</div>
       <div style="display:flex; gap:18px;">
-        <a href="#tjenester" style="color:inherit; text-decoration:none;">Våre tjenester</a>
-        <a href="#team" style="color:inherit; text-decoration:none;">Om oss</a>
-        <a href="#kontakt" style="color:inherit; text-decoration:none;">Kontakt oss</a>
+        <a href="./tjenester.html" style="color:inherit; text-decoration:none;">Våre tjenester</a>
+        <a href="./om-oss.html" style="color:inherit; text-decoration:none;">Om oss</a>
+        <a href="./kontakt.html" style="color:inherit; text-decoration:none;">Kontakt oss</a>
         <a href="./personvern.html" style="color:inherit; text-decoration:none;">Personvern</a>
       </div>
     </div>
