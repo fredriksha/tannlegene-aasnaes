@@ -46,35 +46,6 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section title="Møt Bruno" className="bg-gray-50">
-        <div className="split-section">
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Vår søte assistent Bruno</h2>
-            <p className="text-gray500 mb-4 text-lg">
-              Hos oss på Tannlegene Aasnæs har vi vår søte hund Bruno som en del av familien. 
-              Bruno er en rolig og vennlig hund som elsker å møte nye mennesker.
-            </p>
-            <p className="text-gray500 mb-6 text-lg">
-              Hvis du synes det er koselig, kan Bruno være med under ditt tannlegebesøk. 
-              Mange av våre pasienter, spesielt barn, synes det er trøstende å ha Bruno til stede 
-              under behandlingen. Han er alltid snill og rolig, og kan hjelpe til å gjøre 
-              tannlegebesøket til en mer behagelig opplevelse.
-            </p>
-            <div className="bg-dental p-4 rounded-lg">
-              <p className="text-gray700 font-medium">
-                💡 Ring oss og si fra hvis du ønsker at Bruno skal være med under behandlingen!
-              </p>
-            </div>
-          </div>
-          <div>
-            <img 
-              src="/Images/bruno.png" 
-              alt="Bruno, vår søte hund" 
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-          </div>
-        </div>
-      </Section>
     </>
   )
 }
