@@ -31,7 +31,7 @@ export default function Page() {
       <Section>
         <p className="text-gray500 mb-4 text-lg">I år 2000 overtok vi praksisen til anerkjente tannlege Gundesø i Sande. Siden den gang har kundemassen vært stabilt økende og vi behandler i dag mange familier som har gått hos oss i en årrekke.</p>
         <p className="text-gray500 mb-4 text-lg">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen - Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
-        <p className="text-gray500 mb-4 text-lg">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike "traumer" knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
+        <p className="text-gray500 mb-4 text-lg">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike &quot;traumer&quot; knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
         <p className="text-gray500 mb-6 text-lg">Ta gjerne kontakt med oss for en timeavtale, og husk at du alltid får et skriftlig kostnadsoverslag dersom du ønsker det. Vi ønsker deg hjertelig velkommen til oss som pasient.</p>
       </Section>
 
