@@ -64,22 +64,6 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section>
-        <div className="split-section">
-          <div className="card">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Om klinikken</h2>
-            <p className="text-gray500 mb-4">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
-            <p className="text-gray500">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
-            <div className="mt-3">
-              <a href="/om-oss" className="btn-outline">Møt oss</a>
-            </div>
-          </div>
-          <div className="card">
-            <div className="h-40 w-full rounded-lg border grid place-items-center text-gray500">{/* TODO: Bytt med ekte bilde */}Bilde – klinikken</div>
-          </div>
-        </div>
-      </Section>
-
       <Section title="Tjenester">
         <div className="grid gap-4 md:grid-cols-3">
           {SERVICES.slice(0, 6).map((s) => (
@@ -88,6 +72,26 @@ export default function Page() {
         </div>
         <div className="mt-4">
           <a href="/vaare-tjenester" className="btn-outline">Les mer om våre tjenester</a>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="split-section">
+          <div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Om klinikken</h2>
+            <p className="text-gray500 mb-4">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
+            <p className="text-gray500 mb-6">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
+            <div>
+              <a href="/om-oss" className="btn-outline">Møt oss</a>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="/Images/tannskraping.jpg" 
+              alt="Tannskraping behandling" 
+              className="w-full h-auto rounded-lg shadow-sm"
+            />
+          </div>
         </div>
       </Section>
 
