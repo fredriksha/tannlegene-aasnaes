@@ -20,9 +20,10 @@ export default function Page() {
         imageSrc="/Images/hero.jpg"
       />
 
-      <Section title="Velkommen til oss">
+      <Section>
         <div className="split-section">
           <div>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Velkommen til oss</h2>
             <p className="text-gray500 mb-6">
               Vårt tannlegeteam har bred kompetanse og erfaring innen alle former for tannlegebehandling. Vi er oppdaterte på trygderefusjonsordningen og har direkte oppgjør med HELFO som sikrer rask og problemfri refusjonsordning for pasienten.
             </p>
@@ -66,9 +67,11 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section title="Om klinikken" intro="Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.">
+      <Section>
         <div className="split-section">
           <div className="card">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Om klinikken</h2>
+            <p className="text-gray500 mb-4">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
             <p className="text-gray500">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
             <div className="mt-3">
               <a href="/om-oss" className="btn-outline">Møt oss</a>
