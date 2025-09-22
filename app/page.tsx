@@ -64,7 +64,7 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section title="Tjenester">
+      <Section title="Tjenester" className="services-section">
         <div className="grid gap-4 md:grid-cols-3">
           {SERVICES.slice(0, 6).map((s) => (
             <ServiceCard key={s.title} title={s.title} summary={s.summary} href="/vaare-tjenester" />
