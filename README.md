@@ -54,3 +54,4 @@ npm run dev
 - [ ] Oppdater `metadataBase`/sitemap/robots med endelig domene
 - [ ] Faviconer (se realfavicongenerator)
 - [ ] Eventuelle ekstra tjenester/undersider
+# Force deployment Mon Sep 22 21:38:54 CEST 2025
