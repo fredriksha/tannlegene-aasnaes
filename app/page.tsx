@@ -54,15 +54,12 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="space-y-4">
-            <div className="h-48 w-full rounded-lg border bg-gray-100 flex items-center justify-center text-gray500">
-              {/* TODO: Bytt med ekte bilde av tannlegeutstyr */}
-              Tannlegeutstyr
-            </div>
-            <div className="h-48 w-full rounded-lg border bg-gray-100 flex items-center justify-center text-gray500">
-              {/* TODO: Bytt med ekte bilde av pasient og tannlege */}
-              Pasient og tannlege
-            </div>
+          <div>
+            <img 
+              src="/Images/detaljbilde.jpg" 
+              alt="Tannlegeutstyr og detaljer" 
+              className="w-full h-auto rounded-lg shadow-sm"
+            />
           </div>
         </div>
       </Section>
