@@ -13,7 +13,7 @@ const config: Config = {
       colors: {
         background: '#FFFFFF',
         dental: '#E6F2FF',
-        blue: '#2A7DE1',
+        blue: '#28316D',
         gray900: '#1F2937',
         gray500: '#6B7280'
       },
