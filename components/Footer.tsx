@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SITE } from '@/lib/content'
 
 export function Footer() {
   return (
@@ -11,16 +12,17 @@ export function Footer() {
         <div>
           <div className="font-semibold text-white">Kontakt</div>
           <ul className="mt-2 space-y-1 text-blue-100">
-            <li>Adresse: <span>Sande sentrum (TODO)</span></li>
-            <li>Telefon: <a href="tel:+47XXXXXXXX" className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">+47 XX XX XX XX</a></li>
-            <li>E‑post: <a href="mailto:post@tannlegeneaasnaes.no" className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">post@tannlegeneaasnaes.no</a></li>
+            <li>Adresse: <span>{SITE.address}</span></li>
+            <li>Telefon: <a href={`tel:${SITE.phone}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">{SITE.phone}</a></li>
+            <li>E‑post: <a href={`mailto:${SITE.email}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">{SITE.email}</a></li>
           </ul>
         </div>
         <div>
           <div className="font-semibold text-white">Åpningstider</div>
           <ul className="mt-2 space-y-1 text-blue-100">
-            <li>Man–Fre: 08:00–16:00</li>
-            <li>Lør–Søn: Stengt</li>
+            {SITE.hours.map((h) => (
+              <li key={h.days}>{h.days}: {h.time}</li>
+            ))}
           </ul>
         </div>
         <div>

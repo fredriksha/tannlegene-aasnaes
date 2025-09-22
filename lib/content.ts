@@ -1,13 +1,13 @@
 export const SITE = {
   name: 'Tannlegene Aasnæs AS',
-  phone: '+47 XX XX XX XX', // TODO: oppdater
-  email: 'post@tannlegeneaasnaes.no', // TODO: verifiser
-  address: 'Sande sentrum, 3070 Sande i Vestfold', // TODO: oppdater
+  phone: '+47 33 77 62 92',
+  email: 'post@tannlegeneaasnes.no',
+  address: 'Fila 6, 3070 Sande i Vestfold',
   hours: [
     { days: 'Man–Fre', time: '08:00–16:00' },
     { days: 'Lør–Søn', time: 'Stengt' },
   ],
-  mapQuery: 'Sande sentrum, 3070 Sande i Vestfold',
+  mapQuery: 'Fila 6, 3070 Sande i Vestfold',
 }
 
 export const FEATURES = [
