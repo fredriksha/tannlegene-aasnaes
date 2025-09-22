@@ -20,7 +20,7 @@ export default function Page() {
         imageSrc="/hero.jpg" /* TODO: Bytt til endelig hero-bilde */
       />
 
-      <Section title="01. VELKOMMEN TIL OSS">
+      <Section title="Velko">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <p className="text-gray500 mb-4">
@@ -31,32 +31,42 @@ export default function Page() {
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-5 h-5 rounded border-2 border-blue-500 bg-blue-500 flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
                 <span className="text-sm text-gray700">Moderne lokaler i Sande sentrum</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-5 h-5 rounded border-2 border-blue-500 bg-blue-500 flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
                 <span className="text-sm text-gray700">Kundeparkering tilgjengelig</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-5 h-5 rounded border-2 border-blue-500 bg-blue-500 flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
                 <span className="text-sm text-gray700">Enkelt tilgjengelig med buss og tog</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-5 h-5 rounded border-2 border-blue-500 bg-blue-500 flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
                 <span className="text-sm text-gray700">Direkte oppgjør med HELFO</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-5 h-5 rounded border-2 border-blue-500 bg-blue-500 flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
                 <span className="text-sm text-gray700">Bred kompetanse og erfaring</span>
               </div>
