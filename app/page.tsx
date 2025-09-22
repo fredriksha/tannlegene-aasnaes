@@ -82,7 +82,7 @@ export default function Page() {
             <p className="text-gray500 mb-4">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
             <p className="text-gray500 mb-6">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
             <div>
-              <a href="/om-oss" className="btn-outline">Møt oss</a>
+              <a href="/om-oss" className="btn-outline">Les mer om våre ansatte</a>
             </div>
           </div>
           <div>
