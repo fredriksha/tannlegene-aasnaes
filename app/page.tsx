@@ -17,7 +17,7 @@ export default function Page() {
         secondaryHref="/vaare-tjenester"
         secondaryLabel="Se våre tjenester"
         imageAlt="Klinikk – illustrasjonsbilde"
-        imageSrc="/hero.jpg" /* TODO: Bytt til endelig hero-bilde */
+        imageSrc="/Images/hero.jpg"
       />
 
       <Section title="Velkommen til oss">
