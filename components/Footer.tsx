@@ -4,17 +4,17 @@ import { SITE } from '@/lib/content'
 export function Footer() {
   return (
     <footer className="border-t bg-blue text-white">
-      <div className="container grid gap-10 py-16 md:grid-cols-4">
+      <div className="container grid gap-10 py-16 md:grid-cols-5">
         <div>
           <div className="font-semibold text-white">Tannlegene Aasnæs AS</div>
           <p className="text-blue-100 mt-2">Liten og personlig tannklinikk i Sande sentrum.</p>
         </div>
-        <div>
+        <div className="md:col-span-2">
           <div className="font-semibold text-white">Kontakt</div>
           <ul className="mt-2 space-y-1 text-blue-100">
-            <li>Adresse: <span>{SITE.address}</span></li>
-            <li>Telefon: <a href={`tel:${SITE.phone}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">{SITE.phone}</a></li>
-            <li>E‑post: <a href={`mailto:${SITE.email}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium">{SITE.email}</a></li>
+            <li>Adresse: <span className="whitespace-nowrap">{SITE.address}</span></li>
+            <li>Telefon: <a href={`tel:${SITE.phone}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium whitespace-nowrap">{SITE.phone}</a></li>
+            <li>E‑post: <a href={`mailto:${SITE.email}`} className="no-underline hover:text-white transition-all duration-200 hover:scale-105 hover:font-medium break-all">{SITE.email}</a></li>
           </ul>
         </div>
         <div>
