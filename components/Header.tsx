@@ -17,14 +17,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container h-16 flex items-center justify-between">
-        <Link href="/" className="font-bold text-lg tracking-tight no-underline flex items-center gap-2">
-          <img src="/logo.png" alt="Tannlegene Aasnæs logo" className="h-8 w-8" />
+        <Link href="/" className="font-bold text-lg tracking-tight no-underline flex items-center gap-2 transition-all duration-200 hover:scale-105">
+          <img src="/logo.png" alt="Tannlegene Aasnæs logo" className="h-8 w-8 transition-transform duration-200 hover:rotate-3" />
           <span>Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-6">
           <Link 
             href="/" 
-            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 transition-all duration-200 hover:scale-105 ${
               isActive('/') ? 'text-gray900 border-b-2 border-blue-500' : ''
             }`}
           >
@@ -32,7 +32,7 @@ export function Header() {
           </Link>
           <Link 
             href="/vaare-tjenester" 
-            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 transition-all duration-200 hover:scale-105 ${
               isActive('/vaare-tjenester') ? 'text-gray900 border-b-2 border-blue-500' : ''
             }`}
           >
@@ -40,7 +40,7 @@ export function Header() {
           </Link>
           <Link 
             href="/om-oss" 
-            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 transition-all duration-200 hover:scale-105 ${
               isActive('/om-oss') ? 'text-gray900 border-b-2 border-blue-500' : ''
             }`}
           >
@@ -48,7 +48,7 @@ export function Header() {
           </Link>
           <Link 
             href="/kontakt-oss" 
-            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 transition-all duration-200 hover:scale-105 ${
               isActive('/kontakt-oss') ? 'text-gray900 border-b-2 border-blue-500' : ''
             }`}
           >
@@ -71,8 +71,8 @@ export function Header() {
             <Link 
               href="/" 
               onClick={() => setOpen(false)} 
-              className={`no-underline py-2 px-3 rounded ${
-                isActive('/') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              className={`no-underline py-2 px-3 rounded transition-all duration-200 ${
+                isActive('/') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50 hover:scale-105'
               }`}
             >
               Hjem
@@ -80,8 +80,8 @@ export function Header() {
             <Link 
               href="/vaare-tjenester" 
               onClick={() => setOpen(false)} 
-              className={`no-underline py-2 px-3 rounded ${
-                isActive('/vaare-tjenester') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              className={`no-underline py-2 px-3 rounded transition-all duration-200 ${
+                isActive('/vaare-tjenester') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50 hover:scale-105'
               }`}
             >
               Våre tjenester
@@ -89,8 +89,8 @@ export function Header() {
             <Link 
               href="/om-oss" 
               onClick={() => setOpen(false)} 
-              className={`no-underline py-2 px-3 rounded ${
-                isActive('/om-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              className={`no-underline py-2 px-3 rounded transition-all duration-200 ${
+                isActive('/om-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50 hover:scale-105'
               }`}
             >
               Om oss
@@ -98,8 +98,8 @@ export function Header() {
             <Link 
               href="/kontakt-oss" 
               onClick={() => setOpen(false)} 
-              className={`no-underline py-2 px-3 rounded ${
-                isActive('/kontakt-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              className={`no-underline py-2 px-3 rounded transition-all duration-200 ${
+                isActive('/kontakt-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50 hover:scale-105'
               }`}
             >
               Kontakt oss

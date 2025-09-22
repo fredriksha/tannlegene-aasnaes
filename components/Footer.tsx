@@ -12,8 +12,8 @@ export function Footer() {
           <div className="font-semibold text-white">Kontakt</div>
           <ul className="mt-2 space-y-1 text-blue-100">
             <li>Adresse: <span>Sande sentrum (TODO)</span></li>
-            <li>Telefon: <a href="tel:+47XXXXXXXX" className="no-underline hover:text-white">+47 XX XX XX XX</a></li>
-            <li>E‑post: <a href="mailto:post@tannlegeneaasnaes.no" className="no-underline hover:text-white">post@tannlegeneaasnaes.no</a></li>
+            <li>Telefon: <a href="tel:+47XXXXXXXX" className="no-underline hover:text-white transition-all duration-200 hover:scale-105">+47 XX XX XX XX</a></li>
+            <li>E‑post: <a href="mailto:post@tannlegeneaasnaes.no" className="no-underline hover:text-white transition-all duration-200 hover:scale-105">post@tannlegeneaasnaes.no</a></li>
           </ul>
         </div>
         <div>
@@ -26,11 +26,11 @@ export function Footer() {
         <div>
           <div className="font-semibold text-white">Snarveier</div>
           <ul className="mt-2 space-y-1">
-            <li><Link className="no-underline text-blue-100 hover:text-white" href="/">Hjem</Link></li>
-            <li><Link className="no-underline text-blue-100 hover:text-white" href="/vaare-tjenester">Våre tjenester</Link></li>
-            <li><Link className="no-underline text-blue-100 hover:text-white" href="/om-oss">Om oss</Link></li>
-            <li><Link className="no-underline text-blue-100 hover:text-white" href="/kontakt-oss">Kontakt oss</Link></li>
-            <li><Link className="no-underline text-blue-100 hover:text-white" href="/personvern">Personvern</Link></li>
+            <li><Link className="no-underline text-blue-100 hover:text-white transition-all duration-200 hover:scale-105" href="/">Hjem</Link></li>
+            <li><Link className="no-underline text-blue-100 hover:text-white transition-all duration-200 hover:scale-105" href="/vaare-tjenester">Våre tjenester</Link></li>
+            <li><Link className="no-underline text-blue-100 hover:text-white transition-all duration-200 hover:scale-105" href="/om-oss">Om oss</Link></li>
+            <li><Link className="no-underline text-blue-100 hover:text-white transition-all duration-200 hover:scale-105" href="/kontakt-oss">Kontakt oss</Link></li>
+            <li><Link className="no-underline text-blue-100 hover:text-white transition-all duration-200 hover:scale-105" href="/personvern">Personvern</Link></li>
           </ul>
         </div>
       </div>
