@@ -21,35 +21,40 @@ export default function Page() {
       </Section>
 
       <Section title="Teamet vårt">
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="card">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="card flex flex-col">
             <div className="h-32 w-full rounded-lg border bg-dental mb-4" aria-hidden />
             <div className="font-semibold text-lg">Elin Tandberg Aasnæs</div>
             <div className="text-sm text-gray500 mb-3">Tannlege</div>
-            <p className="text-gray500 text-sm">Elin er opprinnelig fra Fortun i Sogn og Fjordane og gift med Reidulf. Hun har tannlegeeksamen fra Universitetet i Oslo i 1993. Har 25 års erfaring som allmennpraktiserende tannlege, de aller fleste av disse på klinikken i Sande.</p>
+            <p className="text-gray500 text-sm flex-grow">Elin er opprinnelig fra Fortun i Sogn og Fjordane og gift med Reidulf. Hun har tannlegeeksamen fra Universitetet i Oslo i 1993. Har 25 års erfaring som allmannpraktiserende tannlege, de aller fleste av disse på klinikken i Sande.</p>
           </div>
           
-          <div className="card">
+          <div className="card flex flex-col">
             <div className="h-32 w-full rounded-lg border bg-dental mb-4" aria-hidden />
             <div className="font-semibold text-lg">Lars Resen-Fellie</div>
             <div className="text-sm text-gray500 mb-3">Tannlege</div>
-            <p className="text-gray500 text-sm">Tannlege Lars Resen-Fellie er fra Holmestrand. Han har utdannelsen sin fra Universitetet i Bergen. Lars jobber Mandag til Onsdag i Sande, og resten av uken i Ski. Han har tidligere arbeidet som tannlege på Kongsberg.</p>
+            <p className="text-gray500 text-sm flex-grow">Tannlege Lars Resen-Fellie er fra Holmestrand. Han har utdannelsen sin fra Universitetet i Bergen. Lars jobber Mandag til Onsdag i Sande, og resten av uken i Ski. Han har tidligere arbeidet som tannlege på Kongsberg.</p>
           </div>
           
-          <div className="card">
+          <div className="card flex flex-col">
             <div className="h-32 w-full rounded-lg border bg-dental mb-4" aria-hidden />
             <div className="font-semibold text-lg">Reidulf Aasnæs</div>
             <div className="text-sm text-gray500 mb-3">Tannlege</div>
-            <p className="text-gray500 text-sm">Reidulf er født og oppvokst i Sande og har tannlegeeksamen fra Universitetet i Oslo i 1993. Fikk spesialkompetanse i Lystgass sedasjon i 1999 og ble sertifisert til å utføre implantatprotetisk behandling med trygdestønad i 2010.</p>
+            <p className="text-gray500 text-sm flex-grow">Reidulf er født og oppvokst i Sande og har tannlegeeksamen fra Universitetet i Oslo i 1993. Fikk spesialkompetanse i Lystgass sedasjon i 1999 og ble sertifisert til å utføre implantatprotetisk behandling med trygdestønad i 2010.</p>
           </div>
-        </div>
-        
-        <div className="mt-8">
-          <div className="card">
+          
+          <div className="card flex flex-col">
             <div className="h-32 w-full rounded-lg border bg-dental mb-4" aria-hidden />
             <div className="font-semibold text-lg">Johanna Rykke Berstad</div>
             <div className="text-sm text-gray500 mb-3">Oralkirurg</div>
-            <p className="text-gray500 text-sm">Oralkirurg Johanna Rykke Berstad er utdannet tannlege fra universitetet i Oslo i 1993, og spesialist i oral medisin og oral kirurgi fra universitetet i Oslo 2006. Johanna arbeider til daglig på tann- og kjeveklinikken ved Oslo Universitetssykehus, og i tillegg privatpraksis. Johanna utfører implantatbehandling og øvrig oralmedisinsk og oralkirurgisk behandling.</p>
+            <p className="text-gray500 text-sm flex-grow">Oralkirurg Johanna Rykke Berstad er utdannet tannlege fra universitetet i Oslo i 1993, og spesialist i oral medisin og oral kirurgi fra universitetet i Oslo 2006. Johanna arbeider til daglig på tann- og kjeveklinikken ved Oslo Universitetssykehus, og i tillegg privatpraksis. Johanna utfører implantatbehandling og øvrig oralmedisinsk og oralkirurgisk behandling.</p>
+          </div>
+          
+          <div className="card flex flex-col">
+            <div className="h-32 w-full rounded-lg border bg-dental mb-4" aria-hidden />
+            <div className="font-semibold text-lg">Wiktoria Ilzcuk</div>
+            <div className="text-sm text-gray500 mb-3">Tannlege</div>
+            <p className="text-gray500 text-sm flex-grow">Tannlege Wiktoria Ilzcuk er oppvokst i Sande. Hun har sin utdannelse fra Jagiellonian University i Krakow og snakker flytende norsk og polsk. Hun har jobbet hos oss siden sommeren 2024. Wiktoria er opptatt av å skape en trygg og behagelig opplevelse for sine pasienter.</p>
           </div>
         </div>
       </Section>
