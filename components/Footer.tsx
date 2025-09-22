@@ -3,7 +3,7 @@ import Link from 'next/link'
 export function Footer() {
   return (
     <footer className="border-t bg-blue text-white">
-      <div className="container grid gap-8 py-12 md:grid-cols-4">
+      <div className="container grid gap-10 py-16 md:grid-cols-4">
         <div>
           <div className="font-semibold text-white">Tannlegene Aasnæs AS</div>
           <p className="text-blue-100 mt-2">Liten og personlig tannklinikk i Sande sentrum.</p>
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-blue-600">
-        <div className="container py-6 text-sm text-blue-100 flex items-center justify-between">
+        <div className="container py-8 text-sm text-blue-100 flex items-center justify-between">
           <span>© {new Date().getFullYear()} Tannlegene Aasnæs AS. Org.nr: TODO</span>
           <span>Nettside: TODO</span>
         </div>

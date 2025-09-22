@@ -21,7 +21,7 @@ export function Hero({
   imageSrc?: string
 }) {
   return (
-    <section className="relative py-20 md:py-28 lg:py-32 min-h-[480px] md:min-h-[600px]">
+    <section className="relative py-24 md:py-32 lg:py-40 min-h-[520px] md:min-h-[640px]">
       <div
         aria-label={imageAlt || 'Hero-bilde'}
         className="absolute inset-0 -z-10 bg-dental"
