@@ -1,9 +1,19 @@
 "use client"
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 export function Header() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/'
+    }
+    return pathname.startsWith(href)
+  }
+  
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container h-16 flex items-center justify-between">
@@ -12,10 +22,38 @@ export function Header() {
           <span>Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-gray500 hover:text-gray900 no-underline">Hjem</Link>
-          <Link href="/vaare-tjenester" className="text-gray500 hover:text-gray900 no-underline">Våre tjenester</Link>
-          <Link href="/om-oss" className="text-gray500 hover:text-gray900 no-underline">Om oss</Link>
-          <Link href="/kontakt-oss" className="text-gray500 hover:text-gray900 no-underline">Kontakt oss</Link>
+          <Link 
+            href="/" 
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+              isActive('/') ? 'text-gray900 border-b-2 border-blue-500' : ''
+            }`}
+          >
+            Hjem
+          </Link>
+          <Link 
+            href="/vaare-tjenester" 
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+              isActive('/vaare-tjenester') ? 'text-gray900 border-b-2 border-blue-500' : ''
+            }`}
+          >
+            Våre tjenester
+          </Link>
+          <Link 
+            href="/om-oss" 
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+              isActive('/om-oss') ? 'text-gray900 border-b-2 border-blue-500' : ''
+            }`}
+          >
+            Om oss
+          </Link>
+          <Link 
+            href="/kontakt-oss" 
+            className={`text-gray500 hover:text-gray900 no-underline relative pb-1 ${
+              isActive('/kontakt-oss') ? 'text-gray900 border-b-2 border-blue-500' : ''
+            }`}
+          >
+            Kontakt oss
+          </Link>
           <Link href="/kontakt-oss" className="btn">Bestill time</Link>
         </nav>
         <button
@@ -30,10 +68,42 @@ export function Header() {
       {open && (
         <div className="md:hidden border-t bg-white">
           <nav className="container py-3 flex flex-col gap-2" aria-label="Mobilmeny">
-            <Link href="/" onClick={() => setOpen(false)} className="no-underline">Hjem</Link>
-            <Link href="/vaare-tjenester" onClick={() => setOpen(false)} className="no-underline">Våre tjenester</Link>
-            <Link href="/om-oss" onClick={() => setOpen(false)} className="no-underline">Om oss</Link>
-            <Link href="/kontakt-oss" onClick={() => setOpen(false)} className="no-underline">Kontakt oss</Link>
+            <Link 
+              href="/" 
+              onClick={() => setOpen(false)} 
+              className={`no-underline py-2 px-3 rounded ${
+                isActive('/') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              }`}
+            >
+              Hjem
+            </Link>
+            <Link 
+              href="/vaare-tjenester" 
+              onClick={() => setOpen(false)} 
+              className={`no-underline py-2 px-3 rounded ${
+                isActive('/vaare-tjenester') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              }`}
+            >
+              Våre tjenester
+            </Link>
+            <Link 
+              href="/om-oss" 
+              onClick={() => setOpen(false)} 
+              className={`no-underline py-2 px-3 rounded ${
+                isActive('/om-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              }`}
+            >
+              Om oss
+            </Link>
+            <Link 
+              href="/kontakt-oss" 
+              onClick={() => setOpen(false)} 
+              className={`no-underline py-2 px-3 rounded ${
+                isActive('/kontakt-oss') ? 'bg-blue-50 text-blue-600 font-medium' : 'hover:bg-gray-50'
+              }`}
+            >
+              Kontakt oss
+            </Link>
             <Link href="/kontakt-oss" onClick={() => setOpen(false)} className="btn w-full justify-center">Bestill time</Link>
           </nav>
         </div>
