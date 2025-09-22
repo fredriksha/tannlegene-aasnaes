@@ -9,7 +9,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <section className="relative py-16 md:py-20 lg:py-24 min-h-[400px] md:min-h-[480px]">
+      <section className="relative py-12 md:py-16 lg:py-20 min-h-[300px] md:min-h-[360px]">
         <div
           aria-label="Tannlegesenter i Sande"
           className="absolute inset-0 -z-10 bg-dental"
@@ -18,10 +18,10 @@ export default function Page() {
         {/* overlay for contrast */}
         <div className="absolute inset-0 -z-10 bg-white/60" />
 
-        <div className="container">
-          <div className="max-w-2xl">
+        <div className="container flex items-center justify-center min-h-[300px] md:min-h-[360px]">
+          <div className="text-center max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray900 mb-6">Om oss</h1>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <a href="/kontakt-oss" className="btn">Bestill time</a>
             </div>
           </div>
