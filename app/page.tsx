@@ -97,12 +97,12 @@ export default function Page() {
 
       <Section title="Praktisk info">
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="card">
+          <div className="card-dental">
             <div className="font-semibold">Adresse</div>
             <p className="text-gray500 mt-1">{SITE.address}</p>
             <a className="btn-outline mt-2" href={`https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`}>Finn oss på kart</a>
           </div>
-          <div className="card">
+          <div className="card-dental">
             <div className="font-semibold">Åpningstider</div>
             <ul className="text-gray500 mt-1">
               {SITE.hours.map((h) => (
@@ -110,7 +110,7 @@ export default function Page() {
               ))}
             </ul>
           </div>
-          <div className="card">
+          <div className="card-dental">
             <div className="font-semibold">Kontakt</div>
             <p className="text-gray500 mt-1"><a href={`tel:${SITE.phone}`} className="no-underline">Ring oss</a> eller <a href={`mailto:${SITE.email}`} className="no-underline">send e‑post</a>.</p>
           </div>
