@@ -87,7 +87,7 @@ export default function Page() {
           ))}
         </div>
         <div className="mt-4">
-          <a href="/vaare-tjenester" className="btn-outline">Se alle tjenester</a>
+          <a href="/vaare-tjenester" className="btn-outline">Les mer om våre tjenester</a>
         </div>
       </Section>
 
