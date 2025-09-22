@@ -55,3 +55,4 @@ npm run dev
 - [ ] Faviconer (se realfavicongenerator)
 - [ ] Eventuelle ekstra tjenester/undersider
 # Force deployment Mon Sep 22 21:38:54 CEST 2025
+# Force deployment Mon Sep 22 21:40:15 CEST 2025
