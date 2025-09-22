@@ -9,26 +9,31 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Section>
-        <div className="split-section">
-          <div>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Velkommen til tannlegene i sentrum</h2>
-            <p className="text-gray500 mb-4">Tannlegene Aasnæs holder til i moderne lokaler midt i Sande sentrum.</p>
-            <p className="text-gray500 mb-4">I år 2000 overtok vi praksisen til anerkjente tannlege Gundesø i Sande. Siden den gang har kundemassen vært stabilt økende og vi behandler i dag mange familier som har gått hos oss i en årrekke.</p>
-            <p className="text-gray500 mb-4">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen - Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
-            <p className="text-gray500 mb-4">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike "traumer" knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
-            <p className="text-gray500 mb-6">Ta gjerne kontakt med oss for en timeavtale og husk at du alltid får et skriftlig kostnadsoverslag dersom du ønsker det. Vi ønsker deg hjertelig velkommen til oss som pasient.</p>
-            <div>
+      <section className="relative py-24 md:py-32 lg:py-40 min-h-[520px] md:min-h-[640px]">
+        <div
+          aria-label="Tannlegesenter i Sande"
+          className="absolute inset-0 -z-10 bg-dental"
+          style={{ backgroundImage: 'url(/Images/tannlegesenter.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+        />
+        {/* overlay for contrast */}
+        <div className="absolute inset-0 -z-10 bg-white/60" />
+
+        <div className="container">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray900 mb-6">Velkommen til tannlegene i sentrum</h1>
+            <div className="flex flex-wrap gap-3">
               <a href="/kontakt-oss" className="btn">Bestill time</a>
             </div>
           </div>
-          <div>
-            <img 
-              src="/Images/tannlegesenter.jpg" 
-              alt="Tannlegesenter i Sande" 
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-          </div>
+        </div>
+      </section>
+
+      <Section>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gray500 mb-4 text-lg">I år 2000 overtok vi praksisen til anerkjente tannlege Gundesø i Sande. Siden den gang har kundemassen vært stabilt økende og vi behandler i dag mange familier som har gått hos oss i en årrekke.</p>
+          <p className="text-gray500 mb-4 text-lg">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen - Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
+          <p className="text-gray500 mb-4 text-lg">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike "traumer" knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
+          <p className="text-gray500 mb-6 text-lg">Ta gjerne kontakt med oss for en timeavtale, og husk at du alltid får et skriftlig kostnadsoverslag dersom du ønsker det. Vi ønsker deg hjertelig velkommen til oss som pasient.</p>
         </div>
       </Section>
 
