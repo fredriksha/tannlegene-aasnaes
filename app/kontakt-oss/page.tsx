@@ -48,76 +48,33 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section title="Bildegalleri" className="bg-gray-50">
+      <Section title="Møt Bruno" className="bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <p className="text-gray500 text-center mb-8">Se bilder fra vår klinikk og lokaler</p>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <div className="card p-0 overflow-hidden">
+          <div className="split-section">
+            <div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Vår søte hund Bruno</h2>
+              <p className="text-gray500 mb-4 text-lg">
+                Hos oss på Tannlegene Aasnæs har vi vår søte hund Bruno som en del av familien. 
+                Bruno er en rolig og vennlig hund som elsker å møte nye mennesker.
+              </p>
+              <p className="text-gray500 mb-6 text-lg">
+                Hvis du synes det er koselig, kan Bruno være med under ditt tannlegebesøk. 
+                Mange av våre pasienter, spesielt barn, synes det er trøstende å ha Bruno til stede 
+                under behandlingen. Han er alltid snill og rolig, og kan hjelpe til å gjøre 
+                tannlegebesøket til en mer behagelig opplevelse.
+              </p>
+              <div className="bg-dental p-4 rounded-lg">
+                <p className="text-gray700 font-medium">
+                  💡 Ring oss og si fra hvis du ønsker at Bruno skal være med under behandlingen!
+                </p>
+              </div>
+            </div>
+            <div>
               <img 
-                src="/Images/tannlegesenter.jpg" 
-                alt="Tannlegesenter i Sande" 
-                className="w-full h-48 object-cover"
+                src="/Images/bruno.png" 
+                alt="Bruno, vår søte hund" 
+                className="w-full h-auto rounded-lg shadow-sm"
               />
-              <div className="p-4">
-                <h4 className="font-semibold">Vårt tannlegesenter</h4>
-                <p className="text-gray500 text-sm">Moderne lokaler i Sande sentrum</p>
-              </div>
-            </div>
-            
-            <div className="card p-0 overflow-hidden">
-              <img 
-                src="/Images/detaljbilde.jpg" 
-                alt="Tannlegeutstyr og detaljer" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="font-semibold">Moderne utstyr</h4>
-                <p className="text-gray500 text-sm">Høyteknologisk tannlegeutstyr</p>
-              </div>
-            </div>
-            
-            <div className="card p-0 overflow-hidden">
-              <img 
-                src="/Images/tannskraping.jpg" 
-                alt="Tannskraping behandling" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="font-semibold">Behandlingsrom</h4>
-                <p className="text-gray500 text-sm">Trygge og komfortable behandlingsrom</p>
-              </div>
-            </div>
-            
-            <div className="card p-0 overflow-hidden">
-              <img 
-                src="/Images/man-dentist.jpg" 
-                alt="Tannlege i arbeid" 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="font-semibold">Erfarne tannleger</h4>
-                <p className="text-gray500 text-sm">Profesjonell og trygg behandling</p>
-              </div>
-            </div>
-            
-            <div className="card p-0 overflow-hidden">
-              <div className="w-full h-48 bg-dental flex items-center justify-center">
-                <span className="text-gray500">TODO: Bilde av venterom</span>
-              </div>
-              <div className="p-4">
-                <h4 className="font-semibold">Venterom</h4>
-                <p className="text-gray500 text-sm">Hyggelig venterom for pasienter</p>
-              </div>
-            </div>
-            
-            <div className="card p-0 overflow-hidden">
-              <div className="w-full h-48 bg-dental flex items-center justify-center">
-                <span className="text-gray500">TODO: Bilde av resepsjon</span>
-              </div>
-              <div className="p-4">
-                <h4 className="font-semibold">Resepsjon</h4>
-                <p className="text-gray500 text-sm">Vennlig mottakelse og service</p>
-              </div>
             </div>
           </div>
         </div>
