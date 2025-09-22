@@ -13,9 +13,9 @@ export default function Page() {
         title="Din tannlege i Sande"
         subtitle="Liten og personlig tannklinikk i Sande sentrum. Erfaring, trygghet og direkteoppgjør med HELFO."
         primaryHref="/kontakt-oss"
-        primaryLabel="Bestill time"
-        secondaryHref="/vaare-tjenester"
-        secondaryLabel="Se våre tjenester"
+        primaryLabel="Ring oss"
+        secondaryHref="/om-oss"
+        secondaryLabel="Om oss"
         imageAlt="Klinikk – illustrasjonsbilde"
         imageSrc="/Images/hero.jpg"
       />

@@ -33,7 +33,7 @@ export function Hero({
       <div className="container">
         <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray900 mb-6">{title}</h1>
-          {subtitle && <p className="text-gray500 mb-8 max-w-prose text-lg">{subtitle}</p>}
+          {subtitle && <p className="text-gray900 mb-8 max-w-prose text-xl font-medium">{subtitle}</p>}
           <div className="flex flex-wrap gap-3">
             <Link href={primaryHref} className="btn">{primaryLabel}</Link>
             {secondaryHref && secondaryLabel && (
