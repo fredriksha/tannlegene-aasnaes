@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { Route } from 'next'
 
 export function Hero({
   title,
@@ -12,9 +13,9 @@ export function Hero({
 }: {
   title: string
   subtitle?: string
-  primaryHref: string
+  primaryHref: Route
   primaryLabel: string
-  secondaryHref?: string
+  secondaryHref?: Route
   secondaryLabel?: string
   imageAlt?: string
   imageSrc?: string

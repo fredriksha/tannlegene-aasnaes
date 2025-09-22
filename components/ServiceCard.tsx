@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import type { Route } from 'next'
 
 type Props = {
   title: string
   summary: string
-  href?: string
+  href?: Route
 }
 
 export function ServiceCard({ title, summary, href }: Props) {
