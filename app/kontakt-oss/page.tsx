@@ -20,11 +20,17 @@ export default function Page() {
             </div>
           </div>
           
-          <div className="grid gap-8 md:grid-cols-2 mb-12">
+          <div className="grid gap-8 md:grid-cols-3 mb-12">
             <div className="card text-center">
               <h3 className="font-semibold text-lg mb-4">📍 Adresse</h3>
               <p className="text-gray500 mb-4">{SITE.address}</p>
               <a className="btn-outline" href={`https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`}>Se på kart</a>
+            </div>
+            
+            <div className="card text-center">
+              <h3 className="font-semibold text-lg mb-4">📧 E-post</h3>
+              <p className="text-gray500 mb-4">Send oss en e-post</p>
+              <a className="btn-outline" href={`mailto:${SITE.email}`}>{SITE.email}</a>
             </div>
             
             <div className="card text-center">
