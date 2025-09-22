@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <Hero
-        title="Tannhelse med omtanke i Sande"
+        title="Din tannlege i Sande"
         subtitle="Liten og personlig tannklinikk i Sande sentrum. Erfaring, trygghet og direkteoppgjør med HELFO."
         primaryHref="/kontakt-oss"
         primaryLabel="Bestill time"
@@ -20,8 +20,59 @@ export default function Page() {
         imageSrc="/hero.jpg" /* TODO: Bytt til endelig hero-bilde */
       />
 
-      <Section title="Derfor velger pasienter oss">
-        <FeatureList features={FEATURES} />
+      <Section title="01. VELKOMMEN TIL OSS">
+        <div className="grid gap-8 md:grid-cols-2">
+          <div>
+            <p className="text-gray500 mb-4">
+              Tannlegene Aasnæs holder til i moderne lokaler midt i Sande sentrum, har kundeparkering og er enkelt tilgjengelig med buss og tog.
+            </p>
+            <p className="text-gray500 mb-6">
+              Vårt tannlegeteam har bred kompetanse og erfaring innen alle former for tannlegebehandling. Vi er oppdaterte på trygderefusjonsordningen og har direkte oppgjør med HELFO som sikrer rask og problemfri refusjonsordning for pasienten.
+            </p>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                </div>
+                <span className="text-sm text-gray700">Moderne lokaler i Sande sentrum</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                </div>
+                <span className="text-sm text-gray700">Kundeparkering tilgjengelig</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                </div>
+                <span className="text-sm text-gray700">Enkelt tilgjengelig med buss og tog</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                </div>
+                <span className="text-sm text-gray700">Direkte oppgjør med HELFO</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded border-2 border-blue-500 flex items-center justify-center">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                </div>
+                <span className="text-sm text-gray700">Bred kompetanse og erfaring</span>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-4">
+            <div className="h-48 w-full rounded-lg border bg-gray-100 flex items-center justify-center text-gray500">
+              {/* TODO: Bytt med ekte bilde av tannlegeutstyr */}
+              Tannlegeutstyr
+            </div>
+            <div className="h-48 w-full rounded-lg border bg-gray-100 flex items-center justify-center text-gray500">
+              {/* TODO: Bytt med ekte bilde av pasient og tannlege */}
+              Pasient og tannlege
+            </div>
+          </div>
+        </div>
       </Section>
 
       <Section title="Om klinikken" intro="Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.">
