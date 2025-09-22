@@ -21,7 +21,7 @@ export function Hero({
   imageSrc?: string
 }) {
   return (
-    <section className="relative py-16 md:py-24 min-h-[420px] md:min-h-[540px]">
+    <section className="relative py-20 md:py-28 lg:py-32 min-h-[480px] md:min-h-[600px]">
       <div
         aria-label={imageAlt || 'Hero-bilde'}
         className="absolute inset-0 -z-10 bg-dental"
@@ -32,8 +32,8 @@ export function Hero({
 
       <div className="container">
         <div className="max-w-2xl">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray900 mb-4">{title}</h1>
-          {subtitle && <p className="text-gray500 mb-6 max-w-prose">{subtitle}</p>}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray900 mb-6">{title}</h1>
+          {subtitle && <p className="text-gray500 mb-8 max-w-prose text-lg">{subtitle}</p>}
           <div className="flex flex-wrap gap-3">
             <Link href={primaryHref} className="btn">{primaryLabel}</Link>
             {secondaryHref && secondaryLabel && (

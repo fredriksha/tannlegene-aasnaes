@@ -21,7 +21,7 @@ export default function Page() {
       />
 
       <Section title="Velkommen til oss">
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="split-section">
           <div>
             <p className="text-gray500 mb-6">
               Vårt tannlegeteam har bred kompetanse og erfaring innen alle former for tannlegebehandling. Vi er oppdaterte på trygderefusjonsordningen og har direkte oppgjør med HELFO som sikrer rask og problemfri refusjonsordning for pasienten.
@@ -67,7 +67,7 @@ export default function Page() {
       </Section>
 
       <Section title="Om klinikken" intro="Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.">
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="split-section">
           <div className="card">
             <p className="text-gray500">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
             <div className="mt-3">
