@@ -18,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container h-16 flex items-center justify-between">
         <Link href="/" className="font-bold text-lg tracking-tight no-underline flex items-center gap-2">
-          <img src="/tooth.svg" alt="Tannlegene Aasnæs logo" className="h-5 w-5" />
+          <img src="/logo.png" alt="Tannlegene Aasnæs logo" className="h-8 w-8" />
           <span>Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-6">
