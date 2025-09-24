@@ -12,3 +12,4 @@ export function FeatureList({ features }: { features: Feature[] }) {
     </div>
   )
 }
+

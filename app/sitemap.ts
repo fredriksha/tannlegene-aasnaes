@@ -10,3 +10,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/personvern`, changeFrequency: 'yearly', priority: 0.5 },
   ]
 }
+

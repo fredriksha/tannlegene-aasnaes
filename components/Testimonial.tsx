@@ -6,3 +6,4 @@ export function Testimonial({ quote, author }: { quote: string; author?: string 
     </figure>
   )
 }
+

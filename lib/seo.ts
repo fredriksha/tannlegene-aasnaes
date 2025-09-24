@@ -14,3 +14,4 @@ export function pageMeta(title: string, description: string): Metadata {
     alternates: { canonical: '/' },
   }
 }
+
