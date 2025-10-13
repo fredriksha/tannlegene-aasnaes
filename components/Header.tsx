@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -18,7 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container h-16 flex items-center justify-between">
         <Link href="/" className="font-bold text-lg tracking-tight no-underline flex items-center gap-2 transition-all duration-200 hover:scale-105">
-          <img src="/logo.png" alt="Tannlegene Aasnæs logo" className="h-8 w-8 transition-transform duration-200 hover:rotate-3" />
+          <Image src="/logo.png" alt="Tannlegene Aasnæs logo" width={32} height={32} className="h-8 w-8 transition-transform duration-200 hover:rotate-3" priority />
           <span>Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-6">

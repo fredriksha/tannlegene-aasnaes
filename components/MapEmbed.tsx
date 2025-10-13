@@ -8,3 +8,4 @@ export function MapEmbed({ query }: { query: string }) {
   )
 }
 
+

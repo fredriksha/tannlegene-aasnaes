@@ -1,4 +1,5 @@
 import { Section } from '@/components/Section'
+import { HeroBackground } from '@/components/HeroBackground'
 
 export const metadata = {
   title: 'Personvern | Tannlegene Aasnæs AS',
@@ -7,8 +8,21 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <Section title="Personvern" intro="Behandling av personopplysninger hos Tannlegene Aasnæs.">
-      <div className="card space-y-4">
+    <>
+      <HeroBackground 
+        imageSrc="/Images/tannlegesenter.jpg" 
+        alt="Personvern og personopplysninger"
+        className="py-8 md:py-12 lg:py-16 min-h-[200px] md:min-h-[240px]"
+      >
+        <div className="container flex items-center min-h-[200px] md:min-h-[240px]">
+          <div className="max-w-xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray900 mb-4">Personvern</h1>
+          </div>
+        </div>
+      </HeroBackground>
+
+      <Section intro="Behandling av personopplysninger hos Tannlegene Aasnæs.">
+        <div className="card space-y-6">
         <p>Når du er i kontakt med oss som pasient, eller på annen måte, vil vi behandle personopplysninger om deg. Nedenfor finner du informasjon om personopplysninger som samles inn, hvorfor vi gjør dette og dine rettigheter knyttet til behandlingen av personopplysningene.</p>
         <h3 className="font-semibold">Behandlingsansvarlig</h3>
         <p>Behandlingsansvarlig for personopplysningene vi behandler er Tannlegene Aasnæs AS. Du kan kontakte oss på følgende:</p>
@@ -49,7 +63,8 @@ export default function Page() {
         <h3 className="font-semibold">6. Endringer</h3>
         <p>Hvis det skjer endringer i våre tjenester eller i regelverket, kan det medføre endring i informasjonen du er gitt her. Hvis vi har dine kontaktopplysninger vil vi gjøre deg oppmerksom på slike endringer. Ellers vil oppdatert informasjon alltid finnes på våre nettsider.</p>
         <p className="text-gray500 text-sm">Oppdatert oktober 2024</p>
-      </div>
-    </Section>
+        </div>
+      </Section>
+    </>
   )
 }

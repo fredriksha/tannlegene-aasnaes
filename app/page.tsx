@@ -5,6 +5,7 @@ import { ServiceCard } from '@/components/ServiceCard'
 import { MapEmbed } from '@/components/MapEmbed'
 import { Testimonial } from '@/components/Testimonial'
 import { FEATURES, SERVICES, SITE, TESTIMONIALS } from '@/lib/content'
+import Image from 'next/image'
 
 export default function Page() {
   return (
@@ -24,7 +25,7 @@ export default function Page() {
         <div className="split-section">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Velkommen til oss</h2>
-            <p className="text-gray500 mb-6">
+            <p className="text-gray500 mb-6 text-lg">
               Vårt tannlegeteam har bred kompetanse og erfaring innen alle former for tannlegebehandling. Vi er oppdaterte på trygderefusjonsordningen og har direkte oppgjør med HELFO som sikrer rask og problemfri refusjonsordning for pasienten.
             </p>
             <div className="space-y-3">
@@ -55,22 +56,25 @@ export default function Page() {
             </div>
           </div>
           <div>
-            <img 
+            <Image 
               src="/Images/detaljbilde.jpg" 
               alt="Tannlegeutstyr og detaljer" 
+              width={600}
+              height={400}
               className="w-full h-auto rounded-lg shadow-sm"
+              loading="lazy"
             />
           </div>
         </div>
       </Section>
 
       <Section title="Tjenester" className="services-section">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           {SERVICES.slice(0, 6).map((s) => (
             <ServiceCard key={s.title} title={s.title} summary={s.summary} href="/vaare-tjenester" />
           ))}
         </div>
-        <div className="mt-4">
+        <div className="mt-6">
           <a href="/vaare-tjenester" className="btn-outline">Les mer om våre tjenester</a>
         </div>
       </Section>
@@ -79,32 +83,35 @@ export default function Page() {
         <div className="split-section">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Om klinikken</h2>
-            <p className="text-gray500 mb-4">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
-            <p className="text-gray500 mb-6">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
+            <p className="text-gray500 mb-4 text-lg">Vi har fulgt mange familier i Sande gjennom flere år. Hos oss blir du møtt med ro, respekt og god tid.</p>
+            <p className="text-gray500 mb-6 text-lg">I 2000 overtok vi praksisen til tannlege Gundesø. Siden har vi vokst jevnt og stødig med fornøyde pasienter. {/* Kilde: om-oss */}</p>
             <div>
               <a href="/om-oss" className="btn-outline">Les mer om våre ansatte</a>
             </div>
           </div>
           <div>
-            <img 
+            <Image 
               src="/Images/tannskraping.jpg" 
               alt="Tannskraping behandling" 
+              width={600}
+              height={400}
               className="w-full h-auto rounded-lg shadow-sm"
+              loading="lazy"
             />
           </div>
         </div>
       </Section>
 
       <Section title="Praktisk info">
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <div className="card-dental">
             <div className="font-semibold">Adresse</div>
-            <p className="text-gray500 mt-1">{SITE.address}</p>
-            <a className="btn-outline mt-2" href={`https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`}>Finn oss på kart</a>
+            <p className="text-gray500 mt-2">{SITE.address}</p>
+            <a className="btn-outline mt-3" href={`https://maps.google.com/?q=${encodeURIComponent(SITE.address)}`}>Finn oss på kart</a>
           </div>
           <div className="card-dental">
             <div className="font-semibold">Åpningstider</div>
-            <ul className="text-gray500 mt-1">
+            <ul className="text-gray500 mt-2 space-y-1">
               {SITE.hours.map((h) => (
                 <li key={h.days}>{h.days}: {h.time}</li>
               ))}
@@ -112,10 +119,10 @@ export default function Page() {
           </div>
           <div className="card-dental">
             <div className="font-semibold">Kontakt</div>
-            <p className="text-gray500 mt-1"><a href={`tel:${SITE.phone}`} className="no-underline">Ring oss</a> eller <a href={`mailto:${SITE.email}`} className="no-underline">send e‑post</a>.</p>
+            <p className="text-gray500 mt-2"><a href={`tel:${SITE.phone}`} className="no-underline">Ring oss</a> eller <a href={`mailto:${SITE.email}`} className="no-underline">send e‑post</a>.</p>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-8">
           <MapEmbed query={SITE.mapQuery} />
         </div>
       </Section>
