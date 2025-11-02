@@ -18,11 +18,11 @@ export const FEATURES = [
 ]
 
 export const SERVICES = [
-  { title: 'Undersøkelse & rens', summary: 'Forebyggende undersøkelse, røntgen og rens.' },
-  { title: 'Fyllinger & krone', summary: 'Skånsom restaurering med moderne materialer.' },
+  { title: 'Undersøkelse og rens', summary: 'Forebyggende undersøkelse, røntgen og rens.' },
+  { title: 'Fyllinger og krone', summary: 'Skånsom restaurering med moderne materialer.' },
   { title: 'Rotfylling', summary: 'Behandling ved tannverk og infeksjon.' },
   { title: 'Tanntrekking', summary: 'Skånsom ekstraksjon og oppfølging.' },
-  { title: 'Protetikk & implantat', summary: 'Bro, protese og implantatløsninger.' },
+  { title: 'Protetikk og implantat', summary: 'Bro, protese og implantatløsninger.' },
   { title: 'Akutt hjelp', summary: 'Rask time ved akutte smerter.' },
 ]
 
