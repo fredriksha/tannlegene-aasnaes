@@ -88,6 +88,8 @@ export default function Page() {
               height={400}
               className="w-full h-auto rounded-2xl shadow-lg"
               loading="lazy"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
@@ -126,6 +128,8 @@ export default function Page() {
               height={400}
               className="w-full h-auto rounded-2xl shadow-lg"
               loading="lazy"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>

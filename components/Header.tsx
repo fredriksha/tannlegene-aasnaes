@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import clsx from 'clsx'
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -58,17 +59,47 @@ export function Header() {
           <Link href="/kontakt-oss" className="btn">Bestill time</Link>
         </nav>
         <button
-          className="md:hidden inline-flex items-center justify-center rounded-lg border border-gray-300 px-4 py-2 text-gray900 hover:bg-gray100 transition-colors"
+          className="md:hidden inline-flex items-center justify-center rounded-lg border border-gray-300 p-3 text-gray900 hover:bg-gray100 transition-colors"
           aria-label="Meny"
           aria-expanded={open}
           onClick={() => setOpen(v => !v)}
         >
-          ☰
+          <span className="relative block h-4 w-6">
+            <span
+              className={clsx(
+                'absolute left-0 top-0 h-[2px] w-full bg-gray900 transition-transform duration-300',
+                open ? 'translate-y-[6px] rotate-45' : ''
+              )}
+            />
+            <span
+              className={clsx(
+                'absolute left-0 top-1/2 h-[2px] w-full -translate-y-1/2 bg-gray900 transition-opacity duration-300',
+                open ? 'opacity-0' : 'opacity-100'
+              )}
+            />
+            <span
+              className={clsx(
+                'absolute left-0 bottom-0 h-[2px] w-full bg-gray900 transition-transform duration-300',
+                open ? '-translate-y-[6px] -rotate-45' : ''
+              )}
+            />
+          </span>
         </button>
       </div>
-      {open && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
-          <nav className="container py-4 flex flex-col gap-2" aria-label="Mobilmeny">
+      <div
+        className={clsx(
+          'md:hidden overflow-hidden transition-[max-height] duration-300 ease-out bg-white border-t',
+          open ? 'max-h-96 border-gray-200' : 'max-h-0 border-transparent'
+        )}
+        aria-hidden={!open}
+      >
+        <nav
+          className={clsx(
+            'container flex flex-col gap-2 transition-[padding] duration-300',
+            open ? 'py-4' : 'py-0'
+          )}
+          aria-label="Mobilmeny"
+        >
             <Link 
               href="/" 
               onClick={() => setOpen(false)} 
@@ -106,9 +137,8 @@ export function Header() {
               Kontakt oss
             </Link>
             <Link href="/kontakt-oss" onClick={() => setOpen(false)} className="btn w-full justify-center mt-2">Bestill time</Link>
-          </nav>
-        </div>
-      )}
+        </nav>
+      </div>
     </header>
   )
 }

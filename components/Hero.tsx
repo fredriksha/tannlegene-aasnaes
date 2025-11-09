@@ -36,17 +36,7 @@ export function Hero({
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray900 leading-tight">
-                {title.split(' ').map((word, i) => (
-                  <span key={i}>
-                    {i === 0 ? (
-                      <span className="bg-gradient-to-r from-blue to-blueDark bg-clip-text text-transparent">
-                        {word}{' '}
-                      </span>
-                    ) : (
-                      <>{word} </>
-                    )}
-                  </span>
-                ))}
+                {title}
               </h1>
               {subtitle && (
                 <p className="text-lg md:text-xl text-gray700 max-w-prose leading-relaxed">
@@ -88,14 +78,16 @@ export function Hero({
               {/* Dekorativ sirkel bak bilde */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue/20 to-blueLight/40 rounded-[2rem] blur-xl -z-10 scale-110"></div>
               
-              {/* Bilde med border og shadow */}
-              <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl ring-4 ring-white/50">
+              {/* Bilde med shadow */}
+              <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image 
                   src={imageSrc}
                   alt={imageAlt || 'Hero-bilde'}
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-110"
                   priority
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>

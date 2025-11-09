@@ -57,6 +57,8 @@ export default function Page() {
               height={400}
               className="w-full h-auto rounded-lg shadow-sm"
               loading="lazy"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>

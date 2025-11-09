@@ -25,12 +25,12 @@ export default function Page() {
 
       <Section>
         <p className="text-gray500 mb-4 text-lg">I år 2000 overtok vi praksisen til anerkjente tannlege Gundesø i Sande. Siden den gang har kundemassen vært stabilt økende og vi behandler i dag mange familier som har gått hos oss i en årrekke.</p>
-        <p className="text-gray500 mb-4 text-lg">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen - Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
+        <p className="text-gray500 mb-4 text-lg">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen-Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
         <p className="text-gray500 mb-4 text-lg">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike &quot;traumer&quot; knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
         <p className="text-gray500 mb-6 text-lg">Ta gjerne kontakt med oss for en timeavtale, og husk at du alltid får et skriftlig kostnadsoverslag dersom du ønsker det. Vi ønsker deg hjertelig velkommen til oss som pasient.</p>
       </Section>
 
-      <Section title="Teamet vårt">
+      <Section title="Våre tannleger">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="card flex items-start gap-4">
             <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
@@ -115,13 +115,12 @@ export default function Page() {
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Vår søte assistent Bruno</h2>
             <p className="text-gray500 mb-4 text-lg">
-              Hos oss på Tannlegene Aasnæs har vi vår søte hund Bruno som en del av familien. 
+              Hos Tannlegene Aasnæs har vi ofte vår søte hund Bruno som en del av familien. 
               Bruno er en rolig og vennlig hund som elsker å møte nye mennesker.
             </p>
             <p className="text-gray500 mb-6 text-lg">
               Hvis du synes det er koselig, kan Bruno være med under ditt tannlegebesøk. 
-              Mange av våre pasienter, spesielt barn, synes det er trøstende å ha Bruno til stede 
-              under behandlingen. Han er alltid snill og rolig, og kan hjelpe til å gjøre 
+              Han er alltid snill og rolig, og kan hjelpe til å gjøre 
               tannlegebesøket til en mer behagelig opplevelse.
             </p>
             <div className="bg-dental p-4 rounded-lg">
@@ -138,6 +137,8 @@ export default function Page() {
               height={300}
               className="w-full h-auto rounded-lg shadow-sm"
               loading="lazy"
+              quality={80}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>

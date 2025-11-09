@@ -38,8 +38,8 @@ export function Footer() {
       </div>
       <div className="border-t border-blue">
         <div className="container py-6 text-sm text-blueLight flex flex-col md:flex-row items-center justify-between gap-4">
-          <span>© {new Date().getFullYear()} Tannlegene Aasnæs AS. Org.nr: TODO</span>
-          <span>Nettside: TODO</span>
+          <span>© {new Date().getFullYear()} Tannlegene Aasnæs AS. Org.nr: 889 026 812</span>
+          
         </div>
       </div>
     </footer>
