@@ -27,7 +27,6 @@ export default function Page() {
         <p className="text-gray500 mb-4 text-lg">I år 2000 overtok vi praksisen til anerkjente tannlege Gundesø i Sande. Siden den gang har kundemassen vært stabilt økende og vi behandler i dag mange familier som har gått hos oss i en årrekke.</p>
         <p className="text-gray500 mb-4 text-lg">Vårt tannlegeteam består av tannlegene Elin og Reidulf Aasnæs, tannlege Lars Resen-Fellie, oralkirurg Johanna Rykke Berstad og tannlege Wiktoria Ilczuk. På vårt kontor møter du også våre assistenter som alltid tar deg vel imot.</p>
         <p className="text-gray500 mb-4 text-lg">Vi har fokus på at du som pasient blir godt ivaretatt og vi tilbyr høy kvalitet på behandlingen du har behov for. Vi har bred erfaring med å håndtere pasienter som har ulike &quot;traumer&quot; knyttet til tannbehandling og vi er profesjonelle på å behandle så smertefritt som mulig.</p>
-        <p className="text-gray500 mb-6 text-lg">Ta gjerne kontakt med oss for en timeavtale, og husk at du alltid får et skriftlig kostnadsoverslag dersom du ønsker det. Vi ønsker deg hjertelig velkommen til oss som pasient.</p>
       </Section>
 
       <Section title="Våre tannleger">
@@ -37,7 +36,7 @@ export default function Page() {
             <div>
               <div className="font-semibold text-lg">Elin Tandberg Aasnæs</div>
               <div className="text-sm text-gray500 mb-2">Tannlege</div>
-              <p className="text-gray500 text-sm">Elin er opprinnelig fra Fortun i Sogn og Fjordane og gift med Reidulf. Hun har tannlegeeksamen fra Universitetet i Oslo i 1993. Har 25 års erfaring som allmannpraktiserende tannlege, de aller fleste av disse på klinikken i Sande.</p>
+              <p className="text-gray500 text-sm">Elin er opprinnelig fra Fortun i Sogn og Fjordane og gift med Reidulf. Hun har tannlegeeksamen fra Universitetet i Oslo i 1993. Har lang erfaring som allmannpraktiserende tannlege, de aller fleste av disse på klinikken i Sande.</p>
             </div>
           </div>
           
@@ -79,34 +78,26 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section title="Våre tannhelsesekretærer">
+      <Section title="Våre klinikkassistenter">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="card flex items-start gap-4">
             <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
             <div>
-              <div className="font-semibold text-lg">Tannhelsesekretær 1</div>
-              <div className="text-sm text-gray500 mb-2">Tannhelsesekretær</div>
-              <p className="text-gray500 text-sm">Vår erfarne tannhelsesekretær hjelper deg med timebestilling, refusjon og praktiske spørsmål. Hun er der for å gjøre ditt besøk hos oss så enkelt som mulig.</p>
+              <div className="font-semibold text-lg">Kristin Sola Steen</div>
+              <div className="text-sm text-gray500 mb-2">Klinikkassistent</div>
+              <p className="text-gray500 text-sm">Kristin hjelper deg med timebestilling og praktiske spørsmål, og er der for å gjøre ditt besøk hos oss så enkelt og behagelig som mulig.</p>
             </div>
           </div>
           
           <div className="card flex items-start gap-4">
             <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
             <div>
-              <div className="font-semibold text-lg">Tannhelsesekretær 2</div>
-              <div className="text-sm text-gray500 mb-2">Tannhelsesekretær</div>
-              <p className="text-gray500 text-sm">Vår andre tannhelsesekretær har lang erfaring med pasientkontakt og hjelper deg gjerne med alle praktiske henvendelser og spørsmål om behandling.</p>
+              <div className="font-semibold text-lg">Janne Ask</div>
+              <div className="text-sm text-gray500 mb-2">Klinikkassistent</div>
+              <p className="text-gray500 text-sm">Janne hjelper deg med timebestilling og praktiske spørsmål, og er der for å gjøre ditt besøk hos oss så enkelt og behagelig som mulig.</p>
             </div>
           </div>
           
-          <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
-            <div>
-              <div className="font-semibold text-lg">Tannhelsesekretær 3</div>
-              <div className="text-sm text-gray500 mb-2">Tannhelsesekretær</div>
-              <p className="text-gray500 text-sm">Vår tredje tannhelsesekretær er spesielt flink til å hjelpe deg med refusjonssaker og koordinering av behandling. Hun sørger for at alt flyter smidig.</p>
-            </div>
-          </div>
         </div>
       </Section>
 

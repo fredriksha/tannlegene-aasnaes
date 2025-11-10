@@ -21,7 +21,7 @@ export function Header() {
       <div className="container h-20 flex items-center justify-between">
         <Link href="/" className="font-semibold text-lg tracking-tight no-underline flex items-center gap-3 transition-colors hover:text-blue">
           <Image src="/logo.png" alt="Tannlegene Aasnæs logo" width={36} height={36} className="h-9 w-9" priority />
-          <span className="text-gray900">Tannlegene Aasnæs</span>
+          <span className="text-gray900">Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-8">
           <Link 
