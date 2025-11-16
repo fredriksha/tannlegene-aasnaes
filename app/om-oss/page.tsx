@@ -32,7 +32,15 @@ export default function Page() {
       <Section title="Våre tannleger">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <Image
+              src="/Images/employees/Elin A.png"
+              alt="Portrett av Elin Tandberg Aasnæs"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
+              loading="lazy"
+              quality={80}
+            />
             <div>
               <div className="font-semibold text-lg">Elin Tandberg Aasnæs</div>
               <div className="text-sm text-gray500 mb-2">Tannlege</div>
@@ -41,7 +49,16 @@ export default function Page() {
           </div>
           
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <Image
+              src="/Images/employees/Lars-RF.png?v=2"
+              alt="Portrett av Lars Resen-Fellie"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
+              loading="lazy"
+              quality={80}
+              unoptimized
+            />
             <div>
               <div className="font-semibold text-lg">Lars Resen-Fellie</div>
               <div className="text-sm text-gray500 mb-2">Tannlege</div>
@@ -50,7 +67,15 @@ export default function Page() {
           </div>
           
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <Image
+              src="/Images/employees/Reidulf-A.png"
+              alt="Portrett av Reidulf Aasnæs"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
+              loading="lazy"
+              quality={80}
+            />
             <div>
               <div className="font-semibold text-lg">Reidulf Aasnæs</div>
               <div className="text-sm text-gray500 mb-2">Tannlege</div>
@@ -59,7 +84,15 @@ export default function Page() {
           </div>
           
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <Image
+              src="/Images/employees/Johanna-B.png"
+              alt="Portrett av Johanna Rykke Berstad"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
+              loading="lazy"
+              quality={80}
+            />
             <div>
               <div className="font-semibold text-lg">Johanna Rykke Berstad</div>
               <div className="text-sm text-gray500 mb-2">Oralkirurg</div>
@@ -68,7 +101,15 @@ export default function Page() {
           </div>
           
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <Image
+              src="/Images/employees/Wiktoria.png"
+              alt="Portrett av Wiktoria Ilzcuk"
+              width={96}
+              height={96}
+              className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
+              loading="lazy"
+              quality={80}
+            />
             <div>
               <div className="font-semibold text-lg">Wiktoria Ilzcuk</div>
               <div className="text-sm text-gray500 mb-2">Tannlege</div>
@@ -81,7 +122,7 @@ export default function Page() {
       <Section title="Våre klinikkassistenter">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <div className="w-24 h-24 rounded-full border bg-dental flex-shrink-0" aria-hidden />
             <div>
               <div className="font-semibold text-lg">Kristin Sola Steen</div>
               <div className="text-sm text-gray500 mb-2">Klinikkassistent</div>
@@ -90,7 +131,7 @@ export default function Page() {
           </div>
           
           <div className="card flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full border bg-dental flex-shrink-0" aria-hidden />
+            <div className="w-24 h-24 rounded-full border bg-dental flex-shrink-0" aria-hidden />
             <div>
               <div className="font-semibold text-lg">Janne Ask</div>
               <div className="text-sm text-gray500 mb-2">Klinikkassistent</div>
@@ -116,17 +157,17 @@ export default function Page() {
             </p>
             <div className="bg-dental p-4 rounded-lg">
               <p className="text-gray700 font-medium">
-                💡 Ring oss og si fra hvis du ønsker at Bruno skal være med under behandlingen!
+                Ring oss og si fra hvis du ønsker at Bruno skal være med under behandlingen! 💡
               </p>
             </div>
           </div>
           <div>
             <Image 
-              src="/Images/bruno.png" 
+              src="/Images/Bruno-aasn.png" 
               alt="Bruno, vår søte hund" 
               width={400}
               height={300}
-              className="w-full h-auto rounded-lg shadow-sm"
+              className="w-full h-auto rounded-[1.5rem] shadow-sm"
               loading="lazy"
               quality={80}
               sizes="(max-width: 768px) 100vw, 50vw"

@@ -19,8 +19,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <div className="container h-20 flex items-center justify-between">
-        <Link href="/" className="font-semibold text-lg tracking-tight no-underline flex items-center gap-3 transition-colors hover:text-blue">
-          <Image src="/logo.png" alt="Tannlegene Aasnæs logo" width={36} height={36} className="h-9 w-9" priority />
+        <Link href="/" className="font-medium text-lg tracking-tight no-underline flex items-center gap-3 transition-colors hover:text-blue">
+          <Image src="/logo.png" alt="Tannlegene Aasnæs logo" width={287} height={413} className="h-10 w-auto" priority unoptimized />
           <span className="text-gray900">Tannlegene Aasnæs AS</span>
         </Link>
         <nav aria-label="Hovedmeny" className="hidden md:flex items-center gap-8">

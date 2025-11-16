@@ -41,7 +41,7 @@ export default function Page() {
         secondaryHref="/om-oss"
         secondaryLabel="Om oss"
         imageAlt="Klinikk – illustrasjonsbilde"
-        imageSrc="/Images/hero.jpg"
+        imageSrc="/Images/tannlegesenter.jpg"
       />
 
       <Section>
@@ -86,7 +86,7 @@ export default function Page() {
               alt="Tannlegeutstyr og detaljer" 
               width={600}
               height={400}
-              className="w-full h-auto rounded-2xl shadow-lg"
+              className="w-full h-auto rounded-[1.5rem] shadow-lg"
               loading="lazy"
               quality={80}
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -126,7 +126,7 @@ export default function Page() {
               alt="Tannskraping behandling" 
               width={600}
               height={400}
-              className="w-full h-auto rounded-2xl shadow-lg"
+              className="w-full h-auto rounded-[1.5rem] shadow-lg"
               loading="lazy"
               quality={80}
               sizes="(max-width: 768px) 100vw, 50vw"

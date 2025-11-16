@@ -55,7 +55,7 @@ export default function Page() {
               alt="Tanntekniker arbeider med protetiske løsninger" 
               width={600}
               height={400}
-              className="w-full h-auto rounded-lg shadow-sm"
+              className="w-full h-auto rounded-[1.5rem] shadow-sm"
               loading="lazy"
               quality={80}
               sizes="(max-width: 768px) 100vw, 50vw"
