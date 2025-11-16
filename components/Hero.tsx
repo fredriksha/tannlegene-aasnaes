@@ -23,7 +23,7 @@ export function Hero({
   imageSrc?: string
 }) {
   return (
-    <section className="relative py-16 md:py-24 lg:py-28 bg-dental overflow-hidden">
+    <section className="relative py-16 md:py-24 lg:py-28 bg-dental overflow-hidden min-h-[calc(100svh-5rem)]">
       {/* Dekorative bakgrunnselementer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue/10 rounded-full blur-3xl"></div>
@@ -73,6 +73,8 @@ export function Hero({
           {/* Høyre side: Avrundet bilde med dekorative elementer */}
           {imageSrc && (
             <div className="relative w-full max-w-xl mx-auto md:mx-0">
+              {/* Svak gradient bak bildet */}
+              <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-blue/20 to-blueLight/40 blur-2xl" />
               <div className="relative w-full aspect-[4/3] md:aspect-[5/4] overflow-hidden rounded-[1.5rem] shadow-2xl">
                 <Image 
                   src={imageSrc}
