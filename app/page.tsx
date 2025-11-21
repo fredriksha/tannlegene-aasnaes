@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: '/',
     images: [
       {
-        url: '/Images/hero.jpg',
+        url: '/Images/illustrative/detaljbilde.jpg',
         width: 1200,
         height: 630,
         alt: 'Tannlegene Aasnæs AS i Sande',
@@ -41,7 +41,7 @@ export default function Page() {
         secondaryHref="/om-oss"
         secondaryLabel="Om oss"
         imageAlt="Klinikk – illustrasjonsbilde"
-        imageSrc="/Images/tannlegesenter.jpg"
+        imageSrc="/Images/illustrative/close-up.jpg"
       />
 
       <Section>
@@ -82,7 +82,7 @@ export default function Page() {
           </div>
           <div>
             <Image 
-              src="/Images/detaljbilde.jpg" 
+              src="/Images/illustrative/venterom.jpg" 
               alt="Tannlegeutstyr og detaljer" 
               width={600}
               height={400}
@@ -122,7 +122,7 @@ export default function Page() {
           </div>
           <div>
             <Image 
-              src="/Images/tannskraping.jpg" 
+              src="/Images/illustrative/tannlegestol-3.jpg" 
               alt="Tannskraping behandling" 
               width={600}
               height={400}

@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <HeroBackground 
-        imageSrc="/Images/tannlegesenter.jpg" 
+        imageSrc="/Images/illustrative/tannlegestol-2.jpg" 
         alt="Tannlegebehandling i Sande"
         className="py-8 md:py-12 lg:py-16 min-h-[200px] md:min-h-[240px]"
       >
@@ -51,7 +51,7 @@ export default function Page() {
           </div>
           <div>
             <Image 
-              src="/Images/tannlegesenter.jpg" 
+              src="/Images/detaljbilde.jpg" 
               alt="Tanntekniker arbeider med protetiske løsninger" 
               width={600}
               height={400}

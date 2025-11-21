@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <HeroBackground 
-        imageSrc="/Images/tannlegesenter.jpg" 
+        imageSrc="/Images/illustrative/pult.jpg" 
         alt="Tannlegesenter i Sande"
         className="py-8 md:py-12 lg:py-16 min-h-[200px] md:min-h-[240px]"
       >
@@ -147,7 +147,7 @@ export default function Page() {
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Vår søte assistent Bruno</h2>
             <p className="text-gray500 mb-4 text-lg">
-              Hos Tannlegene Aasnæs har vi ofte vår søte hund Bruno som en del av familien. 
+              Hos Tannlegene Aasnæs har vi ofte vår søte hund Bruno som en del av teamet. 
               Bruno er en rolig og vennlig hund som elsker å møte nye mennesker.
             </p>
             <p className="text-gray500 mb-6 text-lg">
@@ -157,7 +157,7 @@ export default function Page() {
             </p>
             <div className="bg-dental p-4 rounded-lg">
               <p className="text-gray700 font-medium">
-                Ring oss og si fra hvis du ønsker at Bruno skal være med under behandlingen! 💡
+                Ring oss og si fra hvis du ønsker at Bruno skal være til stede under behandlingen! 💡
               </p>
             </div>
           </div>

@@ -55,10 +55,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/logo.png', type: 'image/png' }
+      { url: '/favicon1.png', type: 'image/png' }
     ],
     apple: [
-      { url: '/logo.png', type: 'image/png' }
+      { url: '/favicon1.png', type: 'image/png' }
     ]
   },
   verification: {

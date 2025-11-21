@@ -23,7 +23,7 @@ export function Hero({
   imageSrc?: string
 }) {
   return (
-    <section className="relative py-16 md:py-24 lg:py-28 bg-dental overflow-hidden min-h-[calc(100svh-5rem)]">
+    <section className="relative py-20 md:py-28 lg:py-32 bg-dental overflow-hidden min-h-[500px] md:min-h-[600px]">
       {/* Dekorative bakgrunnselementer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue/10 rounded-full blur-3xl"></div>
