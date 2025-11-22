@@ -122,7 +122,7 @@ export default function Page() {
           </div>
           <div className="w-full">
             <Image 
-              src="/Images/illustrative/tannlegestol-3.jpg" 
+              src="Images/illustrative/Tannlegestol-3.jpg" 
               alt="Tannskraping behandling" 
               width={600}
               height={400}
