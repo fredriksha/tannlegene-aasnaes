@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <HeroBackground 
-        imageSrc="/Images/illustrative/pult.jpg" 
+        imageSrc="/Images/illustrative/Pult.jpg" 
         alt="Tannlegesenter i Sande"
         className="py-8 md:py-12 lg:py-16 min-h-[200px] md:min-h-[240px]"
       >
@@ -50,14 +50,13 @@ export default function Page() {
           
           <div className="card flex items-start gap-4">
             <Image
-              src="/Images/employees/Lars-RF.png?v=2"
+              src="/Images/employees/Lars-RF.png"
               alt="Portrett av Lars Resen-Fellie"
               width={96}
               height={96}
               className="w-24 h-24 rounded-full object-cover border flex-shrink-0"
               loading="lazy"
               quality={80}
-              unoptimized
             />
             <div>
               <div className="font-semibold text-lg">Lars Resen-Fellie</div>
@@ -142,7 +141,7 @@ export default function Page() {
         </div>
       </Section>
 
-      <Section className="bg-gray-50">
+      <Section className="bg-gray100">
         <div className="split-section">
           <div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">Vår søte assistent Bruno</h2>

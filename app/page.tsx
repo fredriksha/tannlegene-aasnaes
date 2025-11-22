@@ -120,7 +120,7 @@ export default function Page() {
               <a href="/om-oss" className="btn-outline">Les mer om våre ansatte</a>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             <Image 
               src="/Images/illustrative/tannlegestol-3.jpg" 
               alt="Tannskraping behandling" 

@@ -9,18 +9,26 @@ interface HeroBackgroundProps {
 
 export function HeroBackground({ imageSrc, alt, children, className = "" }: HeroBackgroundProps) {
   return (
-    <section className={`relative ${className}`}>
-      {/* Background Image with CSS fallback */}
-      <div 
-        className="absolute inset-0 -z-10 bg-dental"
-        style={{ backgroundImage: `url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
+    <section className={`relative overflow-hidden ${className}`}>
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src={imageSrc}
+          alt={alt}
+          fill
+          className="object-cover"
+          priority
+          quality={80}
+          sizes="100vw"
+        />
         {/* Overlay for contrast */}
         <div className="absolute inset-0 bg-white/60" />
       </div>
       
       {/* Content */}
-      {children}
+      <div className="relative z-10">
+        {children}
+      </div>
     </section>
   )
 }
